@@ -8,7 +8,7 @@ interface Props {
 export const Game: React.FC<Props> = (props) => {
     return ( 
     <S.Games>
-      {props.img}  {props.text}
+       {props.img}  {props.text}
     </S.Games>
     )
 }

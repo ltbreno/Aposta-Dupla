@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
     display: flex;
     justify-content: center;
@@ -17,7 +16,7 @@ export const Content = styled.div`
     margin: auto ;
     border: 3px solid #161E2C ;
     width: 450px;
-    height: 400px;    
+    height: 330px;    
     border-radius: 8px ;
     background-color: #161E2C ;
 `

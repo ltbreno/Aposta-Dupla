@@ -4,6 +4,7 @@ import { Game } from '../Game/Game';
 
 
 export const Games: React.FC = () => {
+
     return ( 
     <S.Wrapper>
         <S.OriginsGames>
@@ -16,9 +17,9 @@ export const Games: React.FC = () => {
         <br />
         <S.OriginsGames>
             Cassino
-            <Game img={'🎰'} text={'Slots'}  />
-            <Game img={'🎰'} text={'Slots'}  />
-            <Game img={'🎰'} text={'Slots'}  />
+            <Game img={'🎰'} text={'Slots'} />
+            <Game img={'🐯'} text={'Tiger'} />
+            <Game img={'🎰'} text={'Slots'} />
         </S.OriginsGames>
         <hr />
     </S.Wrapper>
