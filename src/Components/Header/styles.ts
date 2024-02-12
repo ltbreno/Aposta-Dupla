@@ -14,13 +14,12 @@ export const Wrapper = styled.div`
     margin: 0 auto ;
     padding: 0 2rem ;
     height: 60px ;
+    
 `
 
 
 
-export const AuthButton = styled.button`
-    border: none ;
-    border-radius: 5px ; 
+export const AuthButton = styled.button` 
     height: 30px ;
     padding : 0 1rem ;
     background-color: #121825 ;
@@ -82,18 +81,5 @@ export const ButtonWrapper = styled.div`
 
 export const HeaderTitle = styled.h2`
     color:white ;
-    animation: moveInfinite 2s linear infinite;
-    
-@keyframes moveInfinite {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(30px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
 `
 

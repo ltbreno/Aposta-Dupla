@@ -1,20 +1,35 @@
 import styled from "styled-components";
 
-export const AuthButton = styled.button`
+export const Wrapper  = styled.div`
+    display: flex ;
+    flex-direction: column ;
+    margin: 0 5px ;
+`
+
+export const OriginsGames = styled.h3`
+    color: #5B677D ;
+    font-size: 1.1rem ;
+    font-weight: 500 ; 
+    text-align: left ;
+    margin: 0 .2rem ;
+`
+
+export const Games = styled.button`
+    display: flex ;
+    margin: 1rem 0 ;
+
+    align-items: center ;
+    text-align: center ;
     border: none ;
     border-radius: 5px ; 
     height: 30px ;
     padding : 0 1rem ;
-    background-color: #101620 ;
+    background-color: #121825 ;
     color: white ;
-    margin: 1rem auto ;
 
     font-size: .80rem ;
     font-weight: 500 ;
-
-    display: flex ;
-    align-items: center ;
-    gap: 0.3rem ;
+    gap: 5px ;
 
     border: none;
     border-radius: 5px;
@@ -27,21 +42,4 @@ export const AuthButton = styled.button`
         background-color: #2980b9;
         transform: scale(1.1);
     }
-
-`
-
-export const LeftSection = styled.div`
-    display: flex ;
-    flex-direction: column ;
-
-    background-color: #121825 ; 
-    height: 100vh ;
-    width: 300px ;
-    position: absolute ;
-    left: 0 ;
-`
-
-
-export const WrapperButton = styled.div`
-    display:flex ;
 `

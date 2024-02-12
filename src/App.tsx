@@ -1,13 +1,12 @@
 import React from 'react';
+import { Rotas } from './routes';
 import { GlobalStyles } from './styles/GlobalStyles';
-import { Header } from './Components/Header/Header';
 
 
 export function App() {
   return (
     <>
-    <Header></Header>
-
+    <Rotas />
     <GlobalStyles />
     </>
   );
