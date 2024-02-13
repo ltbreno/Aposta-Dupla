@@ -12,7 +12,7 @@ export const ForgetPassword: React.FC = () => {
     return (
         <>
             <Header />
-            <LeftBar />
+            <LeftBar showLeft={false} />
             <S.Container>
                 <S.Content>
 

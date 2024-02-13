@@ -10,13 +10,23 @@ export const Wrapper = styled.div`
     justify-content: space-between ;
     align-items: center ;
 
-    max-width: 1890px ;
+    gap: 20px ;
+    max-width: 100vw ;
     margin: 0 auto ;
     padding: 0 2rem ;
     height: 60px ;
     
 `
 
+export const WrapperTitle = styled.div`
+    display: flex ;
+    gap: 20px ;
+`
+
+export const ButtonLeft = styled.button`
+    background-color: #161E2C ;
+    border: none ;
+`
 
 
 export const AuthButton = styled.button` 
@@ -41,6 +51,10 @@ export const AuthButton = styled.button`
 
     &:hover {
         background-color: #2980b9;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: .8rem ;
     }
 
 `
@@ -80,5 +94,10 @@ export const ButtonWrapper = styled.div`
 
 export const HeaderTitle = styled.h2`
     color:white ;
+    align-items:center ;
+
+    @media only screen and (max-width: 768px) {
+        font-size: .8rem ;
+    }
 `
 

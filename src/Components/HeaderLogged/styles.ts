@@ -10,10 +10,14 @@ export const Wrapper = styled.div`
     justify-content: space-between ;
     align-items: center ;
 
-    max-width: 1240px ;
+    max-width: 100vw ;
     margin: 0 auto ;
     padding: 0 2rem ;
     height: 60px ;
+
+    @media only screen and (max-width: 768px) {
+        width: 100vw ;
+    }
     
 `
 
@@ -25,13 +29,18 @@ export const ValueAccount = styled.div`
     align-items: center ;
 
     width: 80px ;
+
+    @media only screen and (max-width: 768px) {
+        display: none ;
+    }
 `
 
 export const ValueFound = styled.h2`
     color: white ;
 
-    font-size: .80rem ;
+    font-size: .8rem ;
     font-weight: 500 ;
+       
 `
 
 
@@ -57,6 +66,11 @@ export const AuthButton = styled.button`
 
     &:hover {
         background-color: #2980b9;
+    }
+
+    @media only screen and (max-width: 768px) {
+        height: 30px ;
+        width: 100px ;
     }
 
 `
@@ -110,8 +124,11 @@ export const ChatButton = styled.button`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #2980b9;
-        transform: scale(1.1);
+        background-color: #2980b9 ;
+    }
+
+    @media only screen and (max-width: 768px) {
+        display: none ;
     }
 `
 
@@ -122,10 +139,14 @@ export const ButtonWrapper = styled.div`
 
 export const HeaderTitle = styled.h2`
     color:white ;
+
+    @media only screen and (max-width: 768px) {
+        font-size: .8rem ;
+    }
 `
 export const DepositButton = styled.button`
 
-height: 30px ;
+    height: 30px ;
     padding : 0 1rem ;
     background-color: #F12C4C ;
     color: white ;
@@ -148,5 +169,18 @@ height: 30px ;
         background-color: #A81E35;
     }
 
+    @media only screen and (max-width: 768px) {
+        display: none ;
+    }
 
+`
+
+export const WrapperTitle = styled.div`
+    display: flex ;
+    gap: 20px ;
+`
+
+export const ButtonLeft = styled.button`
+    background-color: #161E2C ;
+    border: none ;
 `

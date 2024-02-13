@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 
 import { IoChatboxOutline } from "react-icons/io5";
 import { GiWallet } from "react-icons/gi";
-import * as S from '../HeaderLogged/styles';
+import * as S from './styles';
 import { RiLoginBoxLine } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
+import { TfiAlignJustify } from 'react-icons/tfi';
+import { LeftBar } from '../LeftBar/LeftBar';
 
 interface ExpandableButtonProps {
     additionalItems: React.ReactNode[];
@@ -23,10 +25,18 @@ export const HeaderLogged: React.FC<ExpandableButtonProps> = ({ additionalItems 
         navigate('/deposit');
     }
 
+    const [showLeft, setShowLeft] = useState(false) ;
+
     return (
+    
         <S.StyledHeader>
             <S.Wrapper>
-                <S.HeaderTitle>Aposta dupla 🔥</S.HeaderTitle>
+                <S.WrapperTitle>
+                        <S.ButtonLeft key={1} onClick={() => setShowLeft(!showLeft) }>
+                            <TfiAlignJustify size={25} color='white' />
+                        </S.ButtonLeft>
+                    <S.HeaderTitle>Aposta dupla 🔥</S.HeaderTitle>
+                </S.WrapperTitle>    
                 <S.ButtonWrapper>
 
                         <S.ExpandButtonContainer >
@@ -60,7 +70,9 @@ export const HeaderLogged: React.FC<ExpandableButtonProps> = ({ additionalItems 
                         <IoChatboxOutline />
                     </S.ChatButton>
                 </S.ButtonWrapper>
+                <LeftBar showLeft={showLeft} />
             </S.Wrapper>
         </S.StyledHeader>
+
     )
 }

@@ -9,6 +9,10 @@ export const TigerIframe = styled.iframe`
     border-radius: 8px ;
 
     margin-top: 10px ;
+
+    @media only screen and (max-width: 768px) {
+        width:100vw ;
+    }
 `
 
 export const GameStats = styled.div`
@@ -23,6 +27,14 @@ export const GameStats = styled.div`
 
     border-radius: 8px ;
     background-color: #121825 ;
+
+    @media only screen and (max-width: 768px) {
+        display: flex ;
+        flex-direction: column ;
+
+        width:100vw ;
+        height:500px ;
+    }
 `
 
 export const GameTitle = styled.h3`

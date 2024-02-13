@@ -51,8 +51,9 @@ export const RecomendPaymentMetod = styled.p`
 
 export const PixPayment = styled.button`
     display: flex ;
-    justify-content: space-evenly ;
+    gap:30px ;
     align-items: center ;
+    justify-content:space-evenly ;
     border-radius: 8px ;
     border: none ;
     width: 80% ;
@@ -75,6 +76,8 @@ export const PixPayment = styled.button`
 
 export const CardPayment = styled.button`
     display: flex ;
+
+    gap: 5px ;
     justify-content: space-evenly ;
     align-items: center ;
     border-radius: 8px ;

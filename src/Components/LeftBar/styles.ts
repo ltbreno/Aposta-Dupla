@@ -1,5 +1,35 @@
 import styled from "styled-components";
 
+interface ContainerProps {
+    showLeft: boolean ;
+}
+
+export const Container = styled.aside<ContainerProps>`
+    position: fixed ;
+    top: 0 ;
+    left: ${ (props) => (props.showLeft ? 
+    '0' : '-350px ')} ; 
+
+    width: 300px ;
+    height: 100vh ;
+    background-color: #161E2C ;
+
+
+    margin-top: 3.75rem ;
+    padding: 2rem ;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25) ;
+
+    transition: 0.3s ease-in ;
+
+    @media only screen and (max-width: 768px) {
+    width:150px;
+    height: 100vh ;
+    border-bottom-right-radius: 8px ;
+  }
+`
+
+
+
 export const AuthButton = styled.button`
     border: none ;
     border-radius: 5px ; 
@@ -25,20 +55,12 @@ export const AuthButton = styled.button`
 
     &:hover {
         background-color: #2980b9;
-        transform: scale(1.1);
     }
 
-`
+    @media only screen and (max-width: 768px) {
 
-export const LeftSection = styled.div`
-    display: flex ;
-    flex-direction: column ;
+    }
 
-    background-color: #121825 ; 
-    height: 100vh ;
-    width: 300px ;
-    position: absolute ;
-    left: 0 ;
 `
 
 

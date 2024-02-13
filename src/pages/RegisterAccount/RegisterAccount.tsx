@@ -8,7 +8,7 @@ export const RegisterAccount: React.FC = () => {
     return (
         <>
             <Header />
-            <LeftBar />
+            <LeftBar showLeft={false} />
             <S.Container>
                 <S.Content>
 

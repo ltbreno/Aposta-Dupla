@@ -5,6 +5,7 @@ import { Header } from '../../Components/Header/Header';
 import { useNavigate } from 'react-router-dom';
 import { LeftBar } from '../../Components/LeftBar/LeftBar';
 
+
 export const Login : React.FC = () => {
 
     const navigate = useNavigate() ;
@@ -19,13 +20,13 @@ export const Login : React.FC = () => {
     }
 
     function msg() {
-        alert("Sua conta foi criada!");
+        alert("Logado com sucesso"); //Logica do login ser efetuado ou falhar
       }
 
     return (
         <>
         <Header />
-        <LeftBar />
+        <LeftBar showLeft={false} />
         <S.Container>
             <S.Content>
 

@@ -5,7 +5,10 @@ import { Home } from './pages/Home/Home';
 import { ForgetPassword } from './pages/ForgetPassword/ForgetPassword';
 import { RegisterAccount } from './pages/RegisterAccount/RegisterAccount';
 import { Logged } from './pages/Logged/Logged';
-import { DepositPage } from './Components/DepositPage/DepositPage';
+import { DepositPage } from './pages/DepositPage/DepositPage';
+import { Pix } from './Components/PagePix/Pix';
+import { AccountPage } from './pages/AccountPage/AccountPage';
+import { AccountBalance } from './Components/AccountBalance/AccountBalance';
 
 export const Rotas: React.FC = () => {
     return (
@@ -18,6 +21,9 @@ export const Rotas: React.FC = () => {
             <Route path='/registeraccount' element={ <RegisterAccount/>} />
             <Route path='/logged' element={ <Logged/>} />
             <Route path='/deposit' element={ <DepositPage/>} />
+            <Route path='/pixpayment' element={ <Pix/>} />
+            <Route path='/accountpage' element={ <AccountPage/> } />
+            <Route path='/accountbalance' element={ <AccountBalance/> } />
         </Routes>
     </BrowserRouter>
     )
