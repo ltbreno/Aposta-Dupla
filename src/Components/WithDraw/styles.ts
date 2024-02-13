@@ -15,7 +15,7 @@ export const Deposit = styled.div`
 
 export const ContentDeposit = styled.div`
     width: 500px ;
-    height: 340px ;
+    height: 300px ;
     background-color: #121825 ;
     border-radius: 8px ;
 
@@ -146,10 +146,26 @@ export const Input = styled.input`
     border-radius:8px;
     border:none ;
 `
+export const InputName = styled.input`
+    width:90px ;
+    height:30px;
+    border-radius:8px;
+    border:none ;
+
+    @media only screen and (max-width: 768px) {
+        width: 200px ;
+    }
+`
+
+export const TextBalance = styled.h2`
+    color:white;
+    font-size: .8rem ;
+    margin-top: 15px ;
+`
 
 export const WrapperName = styled.div`
     display: flex ;
-    flex-direction:column ;
+
     margin-top:15px ;
     gap:20px ;
 
@@ -191,4 +207,8 @@ export const InputSubmit = styled.input`
     &:hover {
         background-color: #A81E35;
     }
+`
+
+export const WithDrawButton = styled.button`
+    margin-top: 15px ;
 `

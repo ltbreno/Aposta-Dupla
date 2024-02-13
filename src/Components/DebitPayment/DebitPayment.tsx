@@ -4,7 +4,7 @@ import * as S from './styles'
 
 import { FaAddressCard } from "react-icons/fa6";
 
-export const CreditPayment: React.FC = () => {
+export const DebitPayment: React.FC = () => {
 
     const navigate = useNavigate() ;
 

@@ -10,6 +10,9 @@ import { Pix } from './Components/PagePix/Pix';
 import { AccountPage } from './pages/AccountPage/AccountPage';
 import { AccountBalance } from './Components/AccountBalance/AccountBalance';
 import { CreditPayment } from './Components/CreditPayment/CreditPayment';
+import { DebitPayment } from './Components/DebitPayment/DebitPayment';
+import { WithDraw } from './Components/WithDraw/WithDraw';
+
 
 export const Rotas: React.FC = () => {
     return (
@@ -26,6 +29,8 @@ export const Rotas: React.FC = () => {
             <Route path='/accountpage' element={ <AccountPage/> } />
             <Route path='/accountbalance' element={ <AccountBalance/> } />
             <Route path='/creditpayment' element={ <CreditPayment/> } />
+            <Route path='/debitpayment' element={ <DebitPayment/> } />
+            <Route path='/withdraw' element={ <WithDraw/> } />
         </Routes>
     </BrowserRouter>
     )

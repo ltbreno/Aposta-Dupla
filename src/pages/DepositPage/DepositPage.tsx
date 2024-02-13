@@ -22,6 +22,14 @@ export const DepositPage: React.FC = () => {
         navigate('/pixpayment')
     }
 
+    const handleCreditPayment = () => {
+        navigate('/creditpayment')
+    }
+
+    const handleDebitPayment = () => {
+        navigate('/debitpayment')
+    }
+
   return (
     <>
     <HeaderLogged additionalItems={[]}/>
@@ -35,12 +43,12 @@ export const DepositPage: React.FC = () => {
                         <MdOutlinePix />
                     </S.PixPayment>
 
-                    <S.CardPayment>
+                    <S.CardPayment onClick={handleCreditPayment}>
                         Credit
                         <FaCreditCard />
                     </S.CardPayment>
 
-                    <S.CardPayment>
+                    <S.CardPayment onClick={handleDebitPayment}>
                         Debito
                         <FaCreditCard />
                     </S.CardPayment>

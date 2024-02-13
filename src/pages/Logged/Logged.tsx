@@ -3,6 +3,7 @@ import { HeaderLogged } from "../../Components/HeaderLogged/HeaderLogged"
 import * as S from './styles'
 
 import { IoPerson } from "react-icons/io5";
+import { RiLoginBoxLine } from "react-icons/ri";
 import { GiPresent } from "react-icons/gi";
 import { GiWallet } from "react-icons/gi";
 import { BiSolidWallet } from "react-icons/bi";
@@ -27,6 +28,14 @@ export const Logged: React.FC = () => {
         navigate('/accountbalance')
     }
 
+    const handleWithDraw = () => {
+        navigate('/withdraw')
+    }
+
+    const handleExit = () => {
+        navigate('/')
+    } 
+
 
     const additionalItems = [
         <S.Wrapper>
@@ -45,9 +54,14 @@ export const Logged: React.FC = () => {
                 Depositar
             </S.AccountButton>
 
-            <S.AccountButton>
+            <S.AccountButton onClick={handleWithDraw}>
                 <BiSolidWallet size={15} />
                 Sacar
+            </S.AccountButton>
+
+            <S.AccountButton onClick={handleExit}>
+                <RiLoginBoxLine size={15} />
+                Sair
             </S.AccountButton>
 
         </S.Wrapper>

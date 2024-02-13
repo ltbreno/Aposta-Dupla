@@ -39,7 +39,7 @@ export const AccountPage: React.FC = () => {
 
                     <S.ContentInput>
                         <S.Input type="text" placeholder=" Dados do Backend (Senha)" value={dataFromBackend}readOnly />
-                        <S.Input type="text" placeholder=" Dados do Backend (Telefone)" value={dataFromBackend}readOnly />
+                        <S.Input type="Number" placeholder=" Dados do Backend (CPF)" value={dataFromBackend}readOnly />
                     </S.ContentInput>
 
                     <S.ButtonSubmit type="submit" id="submit" name="submit" onClick={msg}>
