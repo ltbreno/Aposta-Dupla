@@ -70,7 +70,6 @@ export const SubmitButton = styled.button`
     &:hover {
         background-color: #2980b9 ;
         filter: brightness(1.3) ;
-        transform: scale(1.1);
     }
 `
 

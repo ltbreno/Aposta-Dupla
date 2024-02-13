@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
 import { HeaderLogged } from "../HeaderLogged/HeaderLogged"
 import * as S from './styles'
+import { useNavigate } from "react-router-dom";
 
 
 
 export const AccountBalance: React.FC = () => {
+
+    const navigate = useNavigate() ;
+
+    const handleClose = () => {
+        navigate('/logged')
+    }
 
     const [backendBalance, setBackendBalance] = useState<number>(0);
     const [backendBonusBalance, setBackendBonusBalance] = useState<number>(0);
@@ -60,7 +67,7 @@ export const AccountBalance: React.FC = () => {
                         </S.AccountBalanceTotal>
 
                     </S.Container>
-                    <S.ButtonClose>Fechar</S.ButtonClose>
+                    <S.ButtonClose onClick={handleClose}>Fechar</S.ButtonClose>
                 </S.ContentAccountBalance>
             </S.Deposit>
             </>

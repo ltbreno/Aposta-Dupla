@@ -37,8 +37,8 @@ export const AuthButton = styled.button`
     padding : 0 1rem ;
     background-color: #101620 ;
     color: white ;
-    margin: 1rem auto ;
-
+    margin-bottom: 15px ;
+    margin-left: 15px ;
     font-size: .80rem ;
     font-weight: 500 ;
 

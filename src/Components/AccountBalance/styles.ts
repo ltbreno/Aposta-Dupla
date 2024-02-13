@@ -23,7 +23,9 @@ export const ContentAccountBalance = styled.div`
     border-radius: 8px ;
 
     @media only screen and (max-width: 768px) {
-        height:350px ;
+        height:450px ;
+        justify-content:center;
+        align-items:center ;
     }
 `
 
@@ -33,6 +35,15 @@ export const WrapperText = styled.h2`
     font-weight: 400 ;
     color: #FFFFFF ;
     font-size: 1rem ;
+
+    @media only screen and (max-width: 768px) {
+        display:flex ;
+        margin-top: 10px ;
+        margin-left: 0 ;
+        text-align:center ;
+        justify-content:center;
+        align-items:center
+    }
 `
 
 export const Container = styled.div`
@@ -41,6 +52,12 @@ export const Container = styled.div`
     margin-top: 25px ;
     margin-left: 10px ;
     margin-right: 10px ;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
 `
 
 export const AccountBalance = styled.div`
@@ -124,4 +141,13 @@ export const ButtonClose = styled.button`
     width: 75px ;
 
     margin: 10px 0 0 10px;
+
+    @media only screen and (max-width: 768px) {
+        display:flex ;
+        margin-top: 15px ;
+        margin-left: 0 ;
+        justify-content:center;
+        align-items:center ;
+        margin-bottom: 10px ;
+    }
 `

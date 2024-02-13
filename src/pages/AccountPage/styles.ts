@@ -23,6 +23,7 @@ export const ContentDeposit = styled.div`
 
     @media only screen and (max-width: 768px) {
         height:350px ;
+        align-items: center ;
     }
 `
 
@@ -32,11 +33,24 @@ export const WrapperText = styled.h2`
     font-weight: 400 ;
     color: #FFFFFF ;
     font-size: 1rem ;
+
+    @media only screen and (max-width: 768px) {
+        display: flex ;
+        align-items: center ;
+        justify-content: center ;
+    }
 `
 
 export const ContentInput = styled.div`
     display: flex ;
     gap:20px;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column ;
+        justify-content:center ;
+        align-items: center ;
+        gap: 0 ;
+    }
 `
 
 export const Input = styled.input`

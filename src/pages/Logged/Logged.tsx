@@ -5,7 +5,7 @@ import * as S from './styles'
 import { IoPerson } from "react-icons/io5";
 import { GiPresent } from "react-icons/gi";
 import { GiWallet } from "react-icons/gi";
-import { LiaWalletSolid } from "react-icons/lia";
+import { BiSolidWallet } from "react-icons/bi";
 
 import { useNavigate } from "react-router-dom";
 import { Tiger } from "../../Components/Tiger/Tiger";
@@ -46,7 +46,7 @@ export const Logged: React.FC = () => {
             </S.AccountButton>
 
             <S.AccountButton>
-                <LiaWalletSolid size={15} />
+                <BiSolidWallet size={15} />
                 Sacar
             </S.AccountButton>
 
