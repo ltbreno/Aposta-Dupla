@@ -45,8 +45,8 @@ export const WithDraw: React.FC = () => {
                             </S.WrapperForm>
 
                             <S.WrapperName>
-                                <S.InputName type='text' placeholder=' First Nome' required/>
-                                <S.InputName type='text' placeholder=' Last Nome' required/>
+                                <S.InputName type='text' placeholder=' First Name' required/>
+                                <S.InputName type='text' placeholder=' Last Name' required/>
                             </S.WrapperName>
                         
                             <S.TextBalance>Saldo disponivel: R$ {backendBalance} </S.TextBalance>

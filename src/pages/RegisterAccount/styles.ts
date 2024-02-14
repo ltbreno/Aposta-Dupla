@@ -16,7 +16,7 @@ export const Content = styled.div`
     margin: auto ;
     border: 3px solid #161E2C ;
     width: 450px;
-    height: 330px;    
+    height: 460px;    
     border-radius: 8px ;
     background-color: #161E2C ;
 `
@@ -37,18 +37,20 @@ export const LoginInput = styled.input`
     border: none ;
     outline: none ;
     transition: border-color 0.3s ease;
+    padding: .3rem ;
 `
 
 export const TitleInput = styled.h3`
     color: #7A869A ;
     font-size: .8rem ;
     margin-top: 15px ;
-    margin-bottom: 5px ;
+    margin-bottom: 2px ;
 `
 
 export const WrapperLogin = styled.div`
     align-items:center ;
     justify-content:center ;
+
 `
 
 export const SubmitButton = styled.button`
@@ -65,6 +67,7 @@ export const SubmitButton = styled.button`
     border-radius: 8px ;
     background-color: #101620 ;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 25px ;
 
     &:hover {
         background-color: #2980b9 ;
@@ -76,6 +79,13 @@ export const DivisorText = styled.h4`
     margin-top: .7rem ;
     color: #7A869A ;
     font-weight: 500 ; 
+`
+
+export const ShowPasswordButton = styled.button`
+    border: none ;
+    background-color: #161E2C ;
+    align-items: center ;
+    justify-content: center ;
 `
 
 export const ForgetPassword = styled.button`
@@ -94,6 +104,12 @@ export const ForgetPassword = styled.button`
         transform: scale(1.1);
     }
 
+`
+
+export const WrapperViewPassword = styled.div`
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
 `
 
 export const RegisterAccount = styled.button`

@@ -145,12 +145,16 @@ export const Input = styled.input`
     height:30px;
     border-radius:8px;
     border:none ;
+
+    padding: 1px 8px ;
 `
 export const InputName = styled.input`
     width:90px ;
     height:30px;
     border-radius:8px;
     border:none ;
+
+    padding: 1px 8px ;
 
     @media only screen and (max-width: 768px) {
         width: 200px ;
@@ -159,7 +163,7 @@ export const InputName = styled.input`
 
 export const TextBalance = styled.h2`
     color:white;
-    font-size: .8rem ;
+    font-size: 1.1rem ;
     margin-top: 15px ;
 `
 

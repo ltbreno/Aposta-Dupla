@@ -5,6 +5,7 @@ import { RiLoginBoxLine } from "react-icons/ri";
 import * as S from './styles';
 import { TfiAlignJustify } from "react-icons/tfi";
 import { LeftBar } from '../LeftBar/LeftBar';
+import { ChatRightBar } from '../ChatRightBar/ChatRightBar';
 
 export const Header: React.FC = () => {
     const navigate = useNavigate();
@@ -22,6 +23,7 @@ export const Header: React.FC = () => {
     }
 
     const [showLeft, setShowLeft] = useState(false) ;
+    const [showRight, setShowRight] = useState(false) ;
 
     return (
         <S.StyledHeader>
@@ -44,11 +46,12 @@ export const Header: React.FC = () => {
                                 Home
                             </S.AuthButton>
                     )}
-                    <S.ChatButton>
+                    <S.ChatButton key={1} onClick={() => setShowRight(!showRight) }>
                         <IoChatboxOutline />
                     </S.ChatButton>
                 </S.ButtonWrapper>
                 <LeftBar showLeft={showLeft} /> 
+                <ChatRightBar showRight={showRight} />
             </S.Wrapper>
         </S.StyledHeader>
     )

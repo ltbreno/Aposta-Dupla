@@ -9,9 +9,11 @@ import { DepositPage } from './pages/DepositPage/DepositPage';
 import { Pix } from './Components/PagePix/Pix';
 import { AccountPage } from './pages/AccountPage/AccountPage';
 import { AccountBalance } from './Components/AccountBalance/AccountBalance';
-import { CreditPayment } from './Components/CreditPayment/CreditPayment';
-import { DebitPayment } from './Components/DebitPayment/DebitPayment';
+// import { CreditPayment } from './Components/CreditPayment/CreditPayment';
+// import { DebitPayment } from './Components/DebitPayment/DebitPayment';
 import { WithDraw } from './Components/WithDraw/WithDraw';
+
+
 
 
 export const Rotas: React.FC = () => {

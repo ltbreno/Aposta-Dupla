@@ -22,7 +22,7 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h2`
-    margin-top: 5px;
+    margin-top: 15px;
     font-size:1.2rem ;
     color:white ;
 `
@@ -37,6 +37,8 @@ export const LoginInput = styled.input`
     border: none ;
     outline: none ;
     transition: border-color 0.3s ease;
+
+    padding: 1px 8px ;
 `
 
 export const TitleInput = styled.h3`

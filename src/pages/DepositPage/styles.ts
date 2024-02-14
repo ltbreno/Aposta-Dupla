@@ -58,6 +58,7 @@ export const PixPayment = styled.button`
     border: none ;
     width: 80% ;
     height: 30px ;
+    padding: 1px 8px ;
     
     font-size: 1rem ;
     background-color: #0B0F16 ;
@@ -84,6 +85,7 @@ export const CardPayment = styled.button`
     border: none ;
     width: 80% ;
     height: 30px ;
+    padding: 1px 8px ;
     
 
     font-size: .9rem ;

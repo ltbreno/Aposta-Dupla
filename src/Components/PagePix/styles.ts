@@ -145,6 +145,9 @@ export const Input = styled.input`
     height:30px;
     border-radius:8px;
     border:none ;
+    padding: 1px 8px ;
+
+    font-size: 12px ;
 `
 
 export const WrapperName = styled.div`

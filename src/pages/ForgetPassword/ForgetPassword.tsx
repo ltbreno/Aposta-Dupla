@@ -21,7 +21,7 @@ export const ForgetPassword: React.FC = () => {
                     </S.Title>
                     <S.WrapperLogin>
                         <S.TitleInput>Digite seu email *</S.TitleInput>
-                        <S.LoginInput id='login' placeholder=' Login' required />
+                        <S.LoginInput id='login' placeholder=' Endereço de email' required />
                     </S.WrapperLogin>
                     <S.SubmitButton type='submit' id='passwordrequest' name='passwordrequest' onClick={msg}>Enviar</S.SubmitButton>
             </S.Content>

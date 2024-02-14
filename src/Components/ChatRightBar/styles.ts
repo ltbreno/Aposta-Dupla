@@ -49,6 +49,7 @@ export const ChatMensageSubmit = styled.div`
 export const MensageInput = styled.input`
     border: none ;
     border-radius: 8px ;
+    padding: 1px 8px ;
 `
 
 export const ButtonSubmit = styled.button`
@@ -65,6 +66,7 @@ export const ButtonSubmit = styled.button`
     justify-content: center ;
     gap: 0.3rem ;
 
+    width: 60px ;
     border: none;
     border-radius: 5px;
     cursor: pointer;

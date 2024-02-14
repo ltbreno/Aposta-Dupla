@@ -20,7 +20,7 @@ export const Login : React.FC = () => {
     }
 
     function msg() {
-        alert("Logado com sucesso"); //Logica do login ser efetuado ou falhar
+        alert("Tratar a logica de login"); //Logica do login ser efetuado ou falhar
       }
 
     return (

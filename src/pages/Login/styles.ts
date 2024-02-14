@@ -38,6 +38,9 @@ export const LoginInput = styled.input`
     border: none ;
     outline: none ;
     transition: border-color 0.3s ease;
+
+    padding: 1px 8px ;
+    font-size: 13px ;
 `
 
 export const TitleInput = styled.h3`
