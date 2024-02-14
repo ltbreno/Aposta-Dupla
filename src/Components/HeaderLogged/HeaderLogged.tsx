@@ -7,6 +7,7 @@ import { RiLoginBoxLine } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
 import { TfiAlignJustify } from 'react-icons/tfi';
 import { LeftBar } from '../LeftBar/LeftBar';
+import { ChatRightBar } from '../ChatRightBar/ChatRightBar';
 
 interface ExpandableButtonProps {
     additionalItems: React.ReactNode[];
@@ -26,6 +27,8 @@ export const HeaderLogged: React.FC<ExpandableButtonProps> = ({ additionalItems 
     }
 
     const [showLeft, setShowLeft] = useState(false) ;
+
+    const [showRight, setShowRight] = useState(false) ;
 
     return (
     
@@ -66,11 +69,12 @@ export const HeaderLogged: React.FC<ExpandableButtonProps> = ({ additionalItems 
                             </S.DepositButton>
                   
                 
-                    <S.ChatButton>
+                    <S.ChatButton key={1} onClick={() => setShowRight(!showRight) }>
                         <IoChatboxOutline />
                     </S.ChatButton>
                 </S.ButtonWrapper>
                 <LeftBar showLeft={showLeft} />
+                <ChatRightBar showRight={showRight} />
             </S.Wrapper>
         </S.StyledHeader>
 

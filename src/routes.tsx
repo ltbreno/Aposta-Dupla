@@ -28,8 +28,6 @@ export const Rotas: React.FC = () => {
             <Route path='/pixpayment' element={ <Pix/>} />
             <Route path='/accountpage' element={ <AccountPage/> } />
             <Route path='/accountbalance' element={ <AccountBalance/> } />
-            <Route path='/creditpayment' element={ <CreditPayment/> } />
-            <Route path='/debitpayment' element={ <DebitPayment/> } />
             <Route path='/withdraw' element={ <WithDraw/> } />
         </Routes>
     </BrowserRouter>

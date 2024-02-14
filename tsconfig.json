@@ -18,7 +18,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["node"]  // Adicione esta linha
+  },
+  "scripts": {
+    "start": "node server.js"
   },
   "include": [
     "src"

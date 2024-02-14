@@ -22,13 +22,14 @@ export const DepositPage: React.FC = () => {
         navigate('/pixpayment')
     }
 
-    const handleCreditPayment = () => {
+  // eslint-disable-next-line no-lone-blocks
+  {/*  const handleCreditPayment = () => {
         navigate('/creditpayment')
     }
 
     const handleDebitPayment = () => {
         navigate('/debitpayment')
-    }
+    } */}
 
   return (
     <>
@@ -43,12 +44,12 @@ export const DepositPage: React.FC = () => {
                         <MdOutlinePix />
                     </S.PixPayment>
 
-                    <S.CardPayment onClick={handleCreditPayment}>
+                    <S.CardPayment>
                         Credit
                         <FaCreditCard />
                     </S.CardPayment>
 
-                    <S.CardPayment onClick={handleDebitPayment}>
+                    <S.CardPayment>
                         Debito
                         <FaCreditCard />
                     </S.CardPayment>
