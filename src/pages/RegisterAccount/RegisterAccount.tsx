@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Header } from "../../Components/Header/Header"
 import { LeftBar } from "../../Components/LeftBar/LeftBar"
 import { ShowPasswordButton } from "../../Components/ShowPasswordBtn/ShowPasswordBtn";
 import { GlobalStyles } from "../../styles/GlobalStyles"
 import * as S from './styles' ; 
+import { isMobile } from "react-device-detect";
 
 
 export const RegisterAccount: React.FC = () => {
@@ -39,13 +40,30 @@ export const RegisterAccount: React.FC = () => {
         // Atualiza o valor do campo de entrada com o valor limitado
         e.target.value = inputValue;
     };
+    const [showContent, setShowContent] = useState(false);
+
+    useEffect(() => {
+        const closeContentOnMobile = () => {
+            if (isMobile && showContent) {
+                setShowContent(false);
+            }
+        };
+
+        window.addEventListener('resize', closeContentOnMobile);
+
+        return () => {
+            window.removeEventListener('resize', closeContentOnMobile);
+        };
+    }, [showContent]);
+
 
     return (
         <>
-            <Header />
-            <LeftBar showLeft={false} />
-            <S.Container>
-                <S.Content>
+        <Header />
+        <LeftBar showLeft={false} />
+        <S.Container onMouseEnter={() => setShowContent(true)}>
+            <S.Content showContent={showContent}>
+
                     <S.Title>Crie sua conta</S.Title>
                     <S.WrapperLogin>
                         <S.TitleInput>Digite seu email ou nome de usuario *</S.TitleInput>

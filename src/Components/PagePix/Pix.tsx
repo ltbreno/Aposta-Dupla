@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as S from './styles';
 import { useNavigate } from 'react-router-dom';
 import { HeaderLogged } from '../HeaderLogged/HeaderLogged';
@@ -43,12 +43,21 @@ export const Pix: React.FC = () => {
     e.target.value = inputValue;
   };
 
+    const [showDeposit, setShowDeposit] = useState(false);
+    const [showContent, setShowContent] = useState(false);
+
+    const handleMouseEnter = () => {
+        setShowDeposit(true);
+        setTimeout(() => {
+            setShowContent(true);
+        }, 10); // Aguarde a transição do Deposit antes de mostrar o ContentDeposit
+    };
 
   return (
     <>
     <HeaderLogged additionalItems={[]}/>
-    <S.Deposit>
-        <S.ContentDeposit>
+    <S.Deposit showDeposit={showDeposit} onMouseEnter={handleMouseEnter}>
+        <S.ContentDeposit showContent={showContent}>
             <S.Wrapper>
                 <S.TitlePaymentoMetod>Insira as informações de Pix</S.TitlePaymentoMetod>
                 <S.RecomendPaymentMetod>Detalhes do pagamento</S.RecomendPaymentMetod>

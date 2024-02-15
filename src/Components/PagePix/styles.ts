@@ -1,28 +1,33 @@
 import styled from "styled-components";
 
 export const Deposit = styled.div`
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Sombreamento de fundo */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: ${({ showDeposit }) => (showDeposit ? 1 : 0)};
+    transition: opacity 0s ease-in-out;
+`;
 
 export const ContentDeposit = styled.div`
-    width: 500px ;
-    height: 340px ;
-    background-color: #121825 ;
-    border-radius: 8px ;
+    width: 500px;
+    height: 340px;
+    background-color: #121825;
+    border-radius: 8px;
+    opacity: ${({ showContent }) => (showContent ? 1 : 0)};
+    transform: ${({ showContent }) => (showContent ? 'translateY(0)' : 'translateY(100%)')};
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
     @media only screen and (max-width: 768px) {
-        height:350px ;
+        height: 350px;
     }
-`
+`;
 
 export const Wrapper = styled.div`
     display: flex;
@@ -141,14 +146,19 @@ export const WrapperForm = styled.div`
 `
 
 export const Input = styled.input`
-    width:200px ;
-    height:30px;
-    border-radius:8px;
-    border:none ;
-    padding: 1px 8px ;
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    font-size: 14px;
+    outline: none;
 
-    font-size: 12px ;
-`
+    &:focus {
+        border-color: red;
+    }
+`;
+
 
 export const WrapperName = styled.div`
     display: flex ;

@@ -1,31 +1,28 @@
 import styled from "styled-components";
 
 export const Deposit = styled.div`
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Sombreamento de fundo */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+`;
 
 export const ContentDeposit = styled.div`
-    display:flex ;
-    flex-direction: column ;
-    width: 500px ;
-    height: 230px ;
-    background-color: #121825 ;
-    border-radius: 8px ;
-
-    @media only screen and (max-width: 768px) {
-        height:350px ;
-        align-items: center ;
-    }
-`
+    width: 500px;
+    height: 230px;
+    background-color: #121825;
+    border-radius: 8px;
+    opacity: ${({ showContent }) => (showContent ? 1 : 0)};
+    transform: ${({ showContent }) => (showContent ? 'translateY(0)' : 'translateY(100%)')};
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+`;
 
 export const WrapperText = styled.h2`
     margin: 10px 0 0 25px;
@@ -61,8 +58,9 @@ export const Input = styled.input`
     color: white ;
     border: none ;
     border-radius: 8px ;
-    padding: 1px 8px ;
-    font-size: 13px ;
+    padding: 5px 8px;
+    font-size: 14px;
+    outline: none;
 `
 
 export const ButtonSubmit = styled.button`

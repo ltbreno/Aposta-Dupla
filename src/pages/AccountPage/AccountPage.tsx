@@ -11,6 +11,8 @@ export const AccountPage: React.FC = () => {
         alert("Alteração feita com sucesso"); //Logica de funcionar ou não a alteração
       }
 
+    const [showContent, setShowContent] = useState(false);
+
     const navigate = useNavigate() ;
     
     const handleClose = () => {
@@ -29,8 +31,8 @@ export const AccountPage: React.FC = () => {
     return (
         <>
         <HeaderLogged additionalItems={[]} />
-            <S.Deposit>
-                <S.ContentDeposit>
+            <S.Deposit onMouseEnter={() => setShowContent(true)}>
+                <S.ContentDeposit showContent={showContent}>
                 <S.WrapperText>Informações da sua conta</S.WrapperText>
                     <S.ContentInput>
                         <S.Input type="text" placeholder=" Dados do Backend (Nome)" value={dataFromBackend}readOnly />

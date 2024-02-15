@@ -49,7 +49,9 @@ export const ChatMensageSubmit = styled.div`
 export const MensageInput = styled.input`
     border: none ;
     border-radius: 8px ;
-    padding: 1px 8px ;
+    padding: 5px 8px;
+    font-size: 14px;
+    outline: none;
 `
 
 export const ButtonSubmit = styled.button`

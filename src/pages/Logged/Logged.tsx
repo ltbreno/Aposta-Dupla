@@ -36,7 +36,6 @@ export const Logged: React.FC = () => {
         navigate('/')
     } 
 
-
     const additionalItems = [
         <S.Wrapper>
             <S.AccountButton onClick={handleAccountPage}>

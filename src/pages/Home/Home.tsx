@@ -13,6 +13,7 @@ export const Home: React.FC = () => {
         <S.Game>
             <Tiger />
         </S.Game>
+
         </>
     )
 }

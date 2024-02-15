@@ -38,11 +38,14 @@ export const AccountBalance: React.FC = () => {
       }
     }, [backendBalance, backendBonusBalance]);
 
+    const [showContent, setShowContent] = useState(false);
+
+
     return (
         <>
             <HeaderLogged additionalItems={[]} />
-            <S.Deposit>
-                <S.ContentAccountBalance>
+            <S.Deposit onMouseEnter={() => setShowContent(true)}>
+                <S.ContentAccountBalance showContent={showContent}>
                     <S.WrapperText>Meu Saldo</S.WrapperText>
                     <S.Container>
 

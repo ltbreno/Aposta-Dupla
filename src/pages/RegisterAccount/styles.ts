@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ocupa 100% da altura da viewport */
-    margin: 0; 
-
-`
+    opacity: 1;
+`;
 
 export const Content = styled.div`
     display: flex ;
@@ -16,10 +21,14 @@ export const Content = styled.div`
     margin: auto ;
     border: 3px solid #161E2C ;
     width: 450px;
-    height: 460px;    
-    border-radius: 8px ;
-    background-color: #161E2C ;
-`
+    height: 460px;
+    background-color: #121825;
+    border-radius: 8px;
+    opacity: ${({ showContent }) => (showContent ? 1 : 0)};
+    transform: ${({ showContent }) => (showContent ? 'translateY(0)' : 'translateY(100%)')};
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+`;
+
 
 export const Title = styled.h2`
     margin-top: 5px;
@@ -35,9 +44,10 @@ export const LoginInput = styled.input`
     color: white ;
     font-weight: 300 ;
     border: none ;
-    outline: none ;
     transition: border-color 0.3s ease;
-    padding: .3rem ;
+    padding: 5px 8px;
+    font-size: 14px;
+    outline: none;
 `
 
 export const TitleInput = styled.h3`

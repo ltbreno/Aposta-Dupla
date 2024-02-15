@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as S from './styles';
 
 import { useNavigate } from 'react-router-dom';
@@ -11,6 +11,8 @@ import { SiBitcoinsv } from "react-icons/si";
 
 
 export const DepositPage: React.FC = () => {
+
+    const [showContent, setShowContent] = useState(false);
 
     const navigate = useNavigate() ;
 
@@ -34,8 +36,8 @@ export const DepositPage: React.FC = () => {
   return (
     <>
     <HeaderLogged additionalItems={[]}/>
-    <S.Deposit>
-        <S.ContentDeposit>
+    <S.Deposit onMouseEnter={() => setShowContent(true)}>
+        <S.ContentDeposit showContent={showContent}>
             <S.Wrapper>
                 <S.TitlePaymentoMetod>Selecione o metodo de pagamento</S.TitlePaymentoMetod>
                 <S.RecomendPaymentMetod>Recomendado</S.RecomendPaymentMetod>

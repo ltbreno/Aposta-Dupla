@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GlobalStyles } from '../../styles/GlobalStyles';
 import * as S from './styles'
 import { Header } from '../../Components/Header/Header';
@@ -22,13 +22,15 @@ export const Login : React.FC = () => {
     function msg() {
         alert("Tratar a logica de login"); //Logica do login ser efetuado ou falhar
       }
+    
+    const [showContent, setShowContent] = useState(false);
 
     return (
         <>
         <Header />
         <LeftBar showLeft={false} />
-        <S.Container>
-            <S.Content>
+        <S.Container onMouseEnter={() => setShowContent(true)}>
+            <S.Content showContent={showContent}>
 
                 <S.Title>
                     Entrar

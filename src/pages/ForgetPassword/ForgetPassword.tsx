@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+import { isMobile } from 'react-device-detect';
 import { Header } from "../../Components/Header/Header"
 import { LeftBar } from "../../Components/LeftBar/LeftBar"
 
@@ -9,12 +11,29 @@ export const ForgetPassword: React.FC = () => {
         alert('Redefinição de senha enviada para o seu email')
     }
 
+    const [showContent, setShowContent] = useState(false);
+
+
+    useEffect(() => {
+        const closeContentOnMobile = () => {
+            if (isMobile && showContent) {
+                setShowContent(false);
+            }
+        };
+
+        window.addEventListener('resize', closeContentOnMobile);
+
+        return () => {
+            window.removeEventListener('resize', closeContentOnMobile);
+        };
+    }, [showContent]);
+
     return (
         <>
             <Header />
             <LeftBar showLeft={false} />
-            <S.Container>
-                <S.Content>
+            <S.Container onMouseEnter={() => setShowContent(true)}>
+            <S.Content showContent={showContent}>
 
                     <S.Title>
                         Esqueceu sua senha ?

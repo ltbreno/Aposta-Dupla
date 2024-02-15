@@ -5,15 +5,19 @@ export const Games = styled.button`
     margin: 1rem 0 ;
 
     align-items: center ;
+    justify-content:center;
     text-align: center ;
     border: none ;
     border-radius: 5px ; 
     height: 30px ;
+    width:90px;
     padding : 0 1rem ;
     background-color: #121825 ;
     color: white ;
+    padding: 5px 8px;
+    font-size: 15px;
+    outline: none;
 
-    font-size: .80rem ;
     font-weight: 500 ;
     gap: 5px ;
 
@@ -25,7 +29,6 @@ export const Games = styled.button`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #2980b9;
-        transform: scale(1.1);
+        background-color: #2980b9 ;
     }
 `

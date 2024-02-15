@@ -31,11 +31,13 @@ export const WithDraw: React.FC = () => {
     
     }, []);
 
+    const [showContent, setShowContent] = useState(false);
+
     return (
     <>
             <HeaderLogged additionalItems={[]}/>
-            <S.Deposit>
-                <S.ContentDeposit>
+            <S.Deposit onMouseEnter={() => setShowContent(true)}>
+                <S.ContentDeposit showContent={showContent}>
                     <S.Wrapper>
                         <S.TitlePaymentoMetod>Insira as informações de Pix</S.TitlePaymentoMetod>
                         <S.RecomendPaymentMetod>Detalhes do Saque</S.RecomendPaymentMetod>
