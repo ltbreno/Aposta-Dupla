@@ -14,6 +14,8 @@ export const Tiger: React.FC = () => {
                 <S.GameStats>
                     <S.GameTitle>
                         🐯 Fortune Tiger
+                        <br />
+                        <hr color="red"/>
                     </S.GameTitle>
                     <S.TigerImg src={img} />
                     <S.DivGameTips>

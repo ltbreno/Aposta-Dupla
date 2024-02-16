@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { IoChatboxOutline } from "react-icons/io5";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { GiWallet } from "react-icons/gi";
 import * as S from './styles';
 import { RiLoginBoxLine } from 'react-icons/ri';
@@ -39,7 +39,7 @@ export const HeaderLogged: React.FC<ExpandableButtonProps> = ({ additionalItems 
                             <TfiAlignJustify size={25} color='white' />
                         </S.ButtonLeft>
                     <S.HeaderTitle>Aposta dupla 🔥</S.HeaderTitle>
-                </S.WrapperTitle>    
+                </S.WrapperTitle>   
                 <S.ButtonWrapper>
 
                         <S.ExpandButtonContainer >
@@ -70,12 +70,13 @@ export const HeaderLogged: React.FC<ExpandableButtonProps> = ({ additionalItems 
                   
                 
                     <S.ChatButton key={1} onClick={() => setShowRight(!showRight) }>
-                        <IoChatboxOutline />
+                        <IoChatboxEllipsesOutline size={20} />
                     </S.ChatButton>
                 </S.ButtonWrapper>
                 <LeftBar showLeft={showLeft} />
                 <ChatRightBar showRight={showRight} />
             </S.Wrapper>
+            <hr color='#F12C4C' />
         </S.StyledHeader>
 
     )

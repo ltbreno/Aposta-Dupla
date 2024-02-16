@@ -39,27 +39,27 @@ export const Logged: React.FC = () => {
     const additionalItems = [
         <S.Wrapper>
             <S.AccountButton onClick={handleAccountPage}>
-                <IoPerson size={15} />
+                <IoPerson size={20} />
                 Conta
             </S.AccountButton>
 
             <S.AccountButton onClick={handleAccountBalance}>
-                <GiPresent size={15} />
+                <GiPresent size={20} />
                 Meu saldo
             </S.AccountButton>
 
             <S.AccountButton onClick={handleDeposit}>
-                <GiWallet size={15} />
+                <GiWallet size={20} />
                 Depositar
             </S.AccountButton>
 
             <S.AccountButton onClick={handleWithDraw}>
-                <BiSolidWallet size={15} />
+                <BiSolidWallet size={20} />
                 Sacar
             </S.AccountButton>
 
             <S.AccountButton onClick={handleExit}>
-                <RiLoginBoxLine size={15} />
+                <RiLoginBoxLine size={20} />
                 Sair
             </S.AccountButton>
 

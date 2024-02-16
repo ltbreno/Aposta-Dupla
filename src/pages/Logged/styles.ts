@@ -5,16 +5,18 @@ export const Wrapper = styled.div`
     flex-direction: column ;
     align-items: center ;
     justify-content: center ;
+    width: 140px ;
     
 `
 
 export const AccountButton = styled.button`
     display:flex;
-    width: 120px ;
-    height: 22px ;
+    width: 144px ;
+    height: 25px ;
     padding: .3rem ;
 
-    justify-content:center ;
+    align-items:center;
+    font-size: 1rem ;
     gap:5px ;
     border: none ;
     background-color: white ;

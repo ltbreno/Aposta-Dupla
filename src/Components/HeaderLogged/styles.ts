@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
     max-width: 100vw ;
     margin: 0 auto ;
     padding: 0 2rem ;
-    height: 60px ;
+    height: 90px ;
 
     @media only screen and (max-width: 768px) {
         width: 100vw ;
@@ -38,14 +38,14 @@ export const ValueAccount = styled.div`
 export const ValueFound = styled.h2`
     color: white ;
 
-    font-size: .8rem ;
+    font-size: 1rem ;
     font-weight: 500 ;
        
 `
 
 
 export const AuthButton = styled.button` 
-    height: 30px ;
+    height: 40px ;
     padding : 0 1rem ;
     background-color: #121825 ;
     color: white ;
@@ -56,6 +56,7 @@ export const AuthButton = styled.button`
     display: flex ;
     align-items: center ;
     gap: 0.3rem ;
+    font-size: 1rem ;
 
     border: none;
     border-radius: 5px;
@@ -84,7 +85,7 @@ export const additionalItemsContainer = styled.div`
     position: absolute;
     top: 100%;
     left: 0;
-    width:120px ;
+    width:144px ;
     margin-top: 10px ;
     border-radius: 8px ;
 
@@ -104,7 +105,7 @@ export const AdditionalItem = styled.div`
 export const ChatButton = styled.button`
     border: none ;
     border-radius: 5px ; 
-    height: 30px ;
+    height: 40px ;
     padding : 0 1rem ;
     background-color: #121825 ;
     color: white ;
@@ -146,12 +147,12 @@ export const HeaderTitle = styled.h2`
 `
 export const DepositButton = styled.button`
 
-    height: 30px ;
+    height: 40px ;
     padding : 0 1rem ;
     background-color: #F12C4C ;
     color: white ;
 
-    font-size: .80rem ;
+    font-size: .9rem ;
     font-weight: 500 ;
 
     display: flex ;

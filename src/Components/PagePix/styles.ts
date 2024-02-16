@@ -17,7 +17,7 @@ export const Deposit = styled.div`
 
 export const ContentDeposit = styled.div`
     width: 500px;
-    height: 340px;
+    height: 380px;
     background-color: #121825;
     border-radius: 8px;
     opacity: ${({ showContent }) => (showContent ? 1 : 0)};
@@ -38,13 +38,13 @@ export const Wrapper = styled.div`
 
 export const TitlePaymentoMetod = styled.h2`
     margin-top: 10px ;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 300 ;
     color: white ;
 `
 
 export const RecomendPaymentMetod = styled.p`
-    font-size: 12px;
+    font-size: .9rem;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -118,10 +118,10 @@ export const CloseButtonDeposit = styled.button`
     border-radius: 8px ;
     border: none ;
     width: 200px ;
-    height: 30px ;
+    height: 35px ;
     
     margin-top: 10px ;
-    font-size: .8rem ;
+    font-size: 1rem ;
     background-color: #0B0F16 ;
     color: white ;
     border: none;
@@ -147,7 +147,7 @@ export const WrapperForm = styled.div`
 
 export const Input = styled.input`
     width: 200px;
-    height: 30px;
+    height: 35px;
     border-radius: 8px;
     border: 1px solid #ccc;
     padding: 5px 8px;
@@ -179,13 +179,13 @@ export const WrapperValue = styled.div`
     margin-top: 15px ;
 `
 export const InputSubmit = styled.input`
-    height: 30px ;
+    height: 35px ;
     width: 200px ;
     padding : 0 1rem ;
     background-color: #F12C4C ;
     color: white ;
 
-    font-size: .80rem ;
+    font-size: 1rem ;
     font-weight: 500 ;
 
     display: flex ;

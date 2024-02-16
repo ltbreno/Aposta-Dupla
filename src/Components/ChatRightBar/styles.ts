@@ -6,7 +6,7 @@ interface ContainerProps {
 
 export const Container = styled.aside<ContainerProps>`
     position: fixed ;
-    top: 0 ;
+    top: 30px ;
     right: ${ (props) => (props.showRight ? 
     '0' : '-350px ')} ; 
 

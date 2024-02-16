@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { IoChatboxOutline } from "react-icons/io5";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { RiLoginBoxLine } from "react-icons/ri";
 import * as S from './styles';
 import { TfiAlignJustify } from "react-icons/tfi";
@@ -47,7 +47,7 @@ export const Header: React.FC = () => {
                             </S.AuthButton>
                     )}
                     <S.ChatButton key={1} onClick={() => setShowRight(!showRight) }>
-                        <IoChatboxOutline />
+                        <IoChatboxEllipsesOutline size={20} />
                     </S.ChatButton>
                 </S.ButtonWrapper>
                 <LeftBar showLeft={showLeft} /> 

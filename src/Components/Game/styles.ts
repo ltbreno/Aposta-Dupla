@@ -29,6 +29,6 @@ export const Games = styled.button`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #2980b9 ;
+        background-color:#F12C4C ;
     }
 `

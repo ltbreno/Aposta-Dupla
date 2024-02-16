@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
     max-width: 100vw ;
     margin: 0 auto ;
     padding: 0 2rem ;
-    height: 60px ;
+    height: 90px ;
     
 `
 
@@ -30,12 +30,12 @@ export const ButtonLeft = styled.button`
 
 
 export const AuthButton = styled.button` 
-    height: 30px ;
+    height: 40px ;
     padding : 0 1rem ;
     background-color: #121825 ;
     color: white ;
 
-    font-size: .80rem ;
+    font-size: 1rem ;
     font-weight: 500 ;
 
     display: flex ;
@@ -62,7 +62,7 @@ export const AuthButton = styled.button`
 export const ChatButton = styled.button`
     border: none ;
     border-radius: 5px ; 
-    height: 30px ;
+    height: 40px ;
     padding : 0 1rem ;
     background-color: #121825 ;
     color: white ;

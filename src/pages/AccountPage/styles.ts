@@ -29,7 +29,7 @@ export const WrapperText = styled.h2`
 
     font-weight: 400 ;
     color: #FFFFFF ;
-    font-size: 1rem ;
+    font-size: 1.2rem ;
 
     @media only screen and (max-width: 768px) {
         display: flex ;
@@ -52,30 +52,38 @@ export const ContentInput = styled.div`
 
 export const Input = styled.input`
     width: 200px ;
-    height: 30px ;
+    height: 40px ;
     margin: 10px 0 0 25px;
     background-color: #0B0F16 ;
     color: white ;
     border: none ;
     border-radius: 8px ;
     padding: 5px 8px;
-    font-size: 14px;
+    font-size: 1rem;
     outline: none;
 `
 
+export const ButtonWrapper = styled.div`
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    width: 470px ;
+`
+
 export const ButtonSubmit = styled.button`
-    height: 30px ;
+    height: 35px ;
     width: 75px ;
     margin: 10px 0 0 25px;
     padding : 0 1rem ;
     background-color: #F12C4C ;
     color: white ;
 
-    font-size: .80rem ;
+    font-size: 1rem ;
     font-weight: 500 ;
 
     display: flex ;
     align-items: center ;
+    justify-content:center ;
     gap: 0.3rem ;
 
     border: none;
@@ -91,16 +99,17 @@ export const ButtonSubmit = styled.button`
 `
 
 export const ButtonClose = styled.button`
-    height: 30px ;
+    height: 35px ;
     padding : 0 1rem ;
     background-color: #0B0F16 ;
     color: white ;
 
-    font-size: .80rem ;
+    font-size: 1rem ;
     font-weight: 500 ;
 
     display: flex ;
     align-items: center ;
+    justify-content:center ;
     gap: 0.3rem ;
 
     border: none;

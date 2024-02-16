@@ -13,7 +13,7 @@ export const Games: React.FC = () => {
             <Game img={'🎲'} text={'Dice'}  />
             <Game img={'🎲'} text={'Dice'}  />
         </S.OriginsGames>
-        <hr />
+        <hr color='#F12C4C' /> 
         <br />
         <S.OriginsGames>
             Cassino
@@ -21,7 +21,7 @@ export const Games: React.FC = () => {
             <Game img={'🐯'} text={'Tiger'} />
             <Game img={'🎰'} text={'Slots'} />
         </S.OriginsGames>
-        <hr />
+        <hr color='#F12C4C' /> 
     </S.Wrapper>
     )
 }

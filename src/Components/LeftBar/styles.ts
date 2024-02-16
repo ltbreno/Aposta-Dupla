@@ -6,7 +6,7 @@ interface ContainerProps {
 
 export const Container = styled.aside<ContainerProps>`
     position: fixed ;
-    top: 0 ;
+    top: 30px ;
     left: ${ (props) => (props.showLeft ? 
     '0' : '-350px ')} ; 
 
@@ -16,13 +16,13 @@ export const Container = styled.aside<ContainerProps>`
 
 
     margin-top: 3.75rem ;
-    padding: 2rem ;
+    padding: .8rem ;                // padding: 2rem ; padding antigo
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25) ;
 
     transition: 0.3s ease-in ;
 
     @media only screen and (max-width: 768px) {
-    width:150px;
+    width: 150px;
     height: 100vh ;
     border-bottom-right-radius: 8px ;
   }

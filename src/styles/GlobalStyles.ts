@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
 
-    button { 
+    button  { 
         cursor: pointer;
     }
 

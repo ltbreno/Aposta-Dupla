@@ -17,7 +17,7 @@ export const Deposit = styled.div`
 
 export const ContentAccountBalance = styled.div`
      width: 500px;
-    height: 230px;
+    height: 250px;
     background-color: #121825;
     border-radius: 8px;
     opacity: ${({ showContent }) => (showContent ? 1 : 0)};
@@ -36,7 +36,7 @@ export const WrapperText = styled.h2`
 
     font-weight: 400 ;
     color: #FFFFFF ;
-    font-size: 1rem ;
+    font-size: 1.3rem ;
 
     @media only screen and (max-width: 768px) {
         display:flex ;
@@ -64,20 +64,21 @@ export const Container = styled.div`
 
 export const AccountBalance = styled.div`
     display: flex ;
-    flex-direction:column ;
+    flex-direction: column ;
     justify-content: center ;
     align-items: center ;
     font-size:1.5rem ;
     gap: 10px ;
-    width:200px;
-    height:100px;
+    width:220px;
+    height:120px;
     color: white ;
     background-color:#0B0F16;
     border-radius: 8px ;
+
 `
 
 export const TextAccount = styled.h2`
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 400 ;
     color: #BCBFC7 ;
 `
@@ -89,8 +90,8 @@ export const AccountBonusBalance = styled.div`
     align-items: center ;
     font-size:1.5rem ;
     gap: 10px ;
-    width:200px;
-    height:100px;
+    width:220px;
+    height:120px;
     color: white ;
     background-color:#0B0F16;
     border-radius: 8px ;
@@ -103,30 +104,32 @@ export const AccountBalanceTotal = styled.div`
     align-items: center ;
     font-size:1.5rem ;
     gap: 10px ;
-    width:200px;
-    height:100px;
+    width:220px;
+    height:120px;
     color: white ;
     background-color:#0B0F16;
     border-radius: 8px ;
+
 `
 
 export const TotalBalance = styled.p`
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 400 ;
     color: #BCBFC7 ;
 `
 
 export const ButtonClose = styled.button`
-    height: 30px ;
+    height: 40px ;
     padding : 0 1rem ;
-    background-color: #0B0F16 ;
+    background-color: #f12c4c ;
     color: white ;
 
-    font-size: .80rem ;
+    font-size: 1rem ;
     font-weight: 500 ;
 
     display: flex ;
     align-items: center ;
+    justify-content: center;
     gap: 0.3rem ;
 
     border: none;
@@ -137,7 +140,7 @@ export const ButtonClose = styled.button`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #2980b9;
+        background-color: #A81E35;
     }
 
     width: 75px ;

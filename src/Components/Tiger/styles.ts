@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const TigerIframe = styled.iframe`
 
-    width: 700px ;
-    height: 600px ;
+    width: 1200px ;
+    height: 700px ;
 
     border: none ;
     border-radius: 8px ;
 
-    margin-top: 10px ;
+    margin-top: 36px ;
 
     @media only screen and (max-width: 768px) {
         width:100vw ;
@@ -20,7 +20,7 @@ export const GameStats = styled.div`
     justify-content: space-around ;
     align-items: center ;
 
-    width: 700px;
+    width: 1200px;
     height: 200px ;
 
     margin-top:20px ;
@@ -68,6 +68,8 @@ export const DivGameTips = styled.div`
     border-radius:8px;
     width: 220px;
     text-align:center ;
+
+    padding: 1px 8px ;
 
 `
 

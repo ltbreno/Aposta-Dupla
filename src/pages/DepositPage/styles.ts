@@ -16,8 +16,8 @@ export const Deposit = styled.div`
 `;
 
 export const ContentDeposit = styled.div`
-    width: 350px;
-    height: 300px;
+    width: 450px;
+    height: 350px;
     background-color: #121825;
     border-radius: 8px;
     opacity: ${({ showContent }) => (showContent ? 1 : 0)};
@@ -41,7 +41,7 @@ export const Wrapper = styled.div`
 
 export const TitlePaymentoMetod = styled.h2`
     margin-top: 10px ;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300 ;
     color: white ;
 `
@@ -69,7 +69,7 @@ export const PixPayment = styled.button`
     border-radius: 8px ;
     border: none ;
     width: 80% ;
-    height: 30px ;
+    height: 40px ;
     padding: 1px 8px ;
     
     font-size: 1rem ;
@@ -83,7 +83,7 @@ export const PixPayment = styled.button`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #2980b9 ;
+        background-color: #F12C4C ;
     }
 `
 
@@ -96,11 +96,11 @@ export const CardPayment = styled.button`
     border-radius: 8px ;
     border: none ;
     width: 80% ;
-    height: 30px ;
+    height: 40px ;
     padding: 1px 8px ;
     
 
-    font-size: .9rem ;
+    font-size: 1rem ;
     margin-top: 10px ;
     background-color: #0B0F16 ;
     color: white ;
@@ -112,7 +112,7 @@ export const CardPayment = styled.button`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #2980b9 ;
+        background-color: #F12C4C ;
     }
 `
 
@@ -123,10 +123,10 @@ export const CloseButtonDeposit = styled.button`
     border-radius: 8px ;
     border: none ;
     width: 200px ;
-    height: 30px ;
+    height: 40px ;
     
     margin-top: 10px ;
-    font-size: .8rem ;
+    font-size: 1rem ;
     background-color: #0B0F16 ;
     color: white ;
     border: none;
