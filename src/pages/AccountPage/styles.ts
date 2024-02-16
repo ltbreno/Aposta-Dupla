@@ -22,6 +22,11 @@ export const ContentDeposit = styled.div`
     opacity: ${({ showContent }) => (showContent ? 1 : 0)};
     transform: ${({ showContent }) => (showContent ? 'translateY(0)' : 'translateY(100%)')};
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+    @media only screen and (max-width: 768px) {
+        height: 340px;
+    }
+    
 `;
 
 export const WrapperText = styled.h2`
@@ -35,6 +40,7 @@ export const WrapperText = styled.h2`
         display: flex ;
         align-items: center ;
         justify-content: center ;
+        
     }
 `
 
@@ -61,6 +67,10 @@ export const Input = styled.input`
     padding: 5px 8px;
     font-size: 1rem;
     outline: none;
+
+    @media only screen and (max-width: 768px) {
+        margin: 10px 0 0 0;
+    }
 `
 
 export const ButtonWrapper = styled.div`
@@ -68,6 +78,13 @@ export const ButtonWrapper = styled.div`
     align-items: center ;
     justify-content: space-between ;
     width: 470px ;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column ;
+        justify-content: center ;
+        align-items: center ;
+        margin: 0 ;
+    }
 `
 
 export const ButtonSubmit = styled.button`
@@ -96,6 +113,10 @@ export const ButtonSubmit = styled.button`
     &:hover {
         background-color: #A81E35;
     }
+
+    @media only screen and (max-width: 768px) {
+        width: 200px ;
+    }
 `
 
 export const ButtonClose = styled.button`
@@ -121,6 +142,10 @@ export const ButtonClose = styled.button`
 
     &:hover {
         background-color: #2980b9;
+    }
+
+    @media only screen and (max-width: 768px) {
+        width: 200px ;
     }
 
     width: 75px ;

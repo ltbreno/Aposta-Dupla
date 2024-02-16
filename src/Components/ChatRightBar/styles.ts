@@ -14,7 +14,6 @@ export const Container = styled.aside<ContainerProps>`
     height: 100vh ;
     background-color: #161E2C ;
 
-
     margin-top: 3.75rem ;
     padding: 2rem ;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25) ;
@@ -22,9 +21,7 @@ export const Container = styled.aside<ContainerProps>`
     transition: 0.3s ease-in ;
 
     @media only screen and (max-width: 768px) {
-    width:150px;
-    height: 100vh ;
-    border-bottom-right-radius: 8px ;
+    display: none ;
   }
 `
 
@@ -44,6 +41,12 @@ export const ChatMensageSubmit = styled.div`
     gap: 20px ;
     margin-top: 20px ;
     width: 250px ;
+
+    @media only screen and (max-width: 768px) {
+        display: flex ;
+        flex-direction: space-around ;
+        width: 350px ;
+    }
 `
 
 export const MensageInput = styled.input`

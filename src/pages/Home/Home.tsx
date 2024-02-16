@@ -1,6 +1,5 @@
 
 import { Header } from "../../Components/Header/Header"
-import { Tiger } from "../../Components/Tiger/Tiger"
 import * as S from './styles'
 
 export const Home: React.FC = () => {
@@ -9,10 +8,18 @@ export const Home: React.FC = () => {
         <>
         <Header />
 
-        
-        <S.Game>
-            <Tiger />
-        </S.Game>
+            <S.Content>
+
+                <S.ImageHome />
+
+                <S.SearchBar>
+                    <S.SearchInput type="text" class="search-input" placeholder="Pesquisar" />
+                </S.SearchBar>
+
+                <S.GameIcons> {/* Espaço reservado para os jogos */}
+
+                </S.GameIcons>
+            </S.Content>
 
         </>
     )

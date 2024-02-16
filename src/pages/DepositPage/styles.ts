@@ -13,12 +13,13 @@ export const Deposit = styled.div`
     justify-content: center;
     align-items: center;
     opacity: 1;
+    backdrop-filter: blur(10px) ;
 `;
 
 export const ContentDeposit = styled.div`
     width: 450px;
     height: 350px;
-    background-color: #121825;
+    background-color: rgba(0, 0, 0, 0.98) ;
     border-radius: 8px;
     opacity: ${({ showContent }) => (showContent ? 1 : 0)};
     transform: ${({ showContent }) => (showContent ? 'translateY(0)' : 'translateY(100%)')};

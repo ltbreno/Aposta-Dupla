@@ -25,7 +25,7 @@ export const ContentDeposit = styled.div`
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 
     @media only screen and (max-width: 768px) {
-        height: 350px;
+        height: 370px;
     }
 `;
 

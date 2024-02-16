@@ -11,7 +11,8 @@ export const TigerIframe = styled.iframe`
     margin-top: 36px ;
 
     @media only screen and (max-width: 768px) {
-        width:100vw ;
+        width:80vw ;
+        height: 80vh ;
     }
 `
 
@@ -38,8 +39,6 @@ export const GameStats = styled.div`
 `
 
 export const GameTitle = styled.h3`
-    margin-top: 1rem ;
-    margin-left: 3rem ;
 
     color: white ;
     font-size: 1rem ;

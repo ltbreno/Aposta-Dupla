@@ -4,6 +4,7 @@ import { Header } from "../../Components/Header/Header"
 import { LeftBar } from "../../Components/LeftBar/LeftBar"
 
 import * as S from './styles'
+import { Home } from "../Home/Home";
 
 export const ForgetPassword: React.FC = () => {
 
@@ -30,8 +31,7 @@ export const ForgetPassword: React.FC = () => {
 
     return (
         <>
-            <Header />
-            <LeftBar showLeft={false} />
+            <Home />
             <S.Container onMouseEnter={() => setShowContent(true)}>
             <S.Content showContent={showContent}>
 

@@ -7,6 +7,7 @@ import { MdOutlinePix } from "react-icons/md";
 import { FaCreditCard } from "react-icons/fa";
 import { HeaderLogged } from '../../Components/HeaderLogged/HeaderLogged';
 import { SiBitcoinsv } from "react-icons/si";
+import { Logged } from '../Logged/Logged';
  
 
 
@@ -35,7 +36,7 @@ export const DepositPage: React.FC = () => {
 
   return (
     <>
-    <HeaderLogged additionalItems={[]}/>
+    <Logged />
     <S.Deposit onMouseEnter={() => setShowContent(true)}>
         <S.ContentDeposit showContent={showContent}>
             <S.Wrapper>

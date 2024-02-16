@@ -13,6 +13,7 @@ export const Deposit = styled.div`
     justify-content: center;
     align-items: center;
     opacity: 1;
+    backdrop-filter: blur(10px) ;
 `;
 
 export const ContentAccountBalance = styled.div`
@@ -25,7 +26,7 @@ export const ContentAccountBalance = styled.div`
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
     @media only screen and (max-width: 768px) {
-        height:450px ;
+        height:550px ;
         justify-content:center;
         align-items:center ;
     }
@@ -118,6 +119,16 @@ export const TotalBalance = styled.p`
     color: #BCBFC7 ;
 `
 
+export const WrapperButton = styled.div`
+    display: flex ;
+
+    @media only screen and (max-width: 768px) {
+        display: flex ;
+        justify-content: center ;
+        align-items: center ;
+    }
+`
+
 export const ButtonClose = styled.button`
     height: 40px ;
     padding : 0 1rem ;
@@ -154,5 +165,6 @@ export const ButtonClose = styled.button`
         justify-content:center;
         align-items:center ;
         margin-bottom: 10px ;
+        width: 220px ;
     }
 `

@@ -5,6 +5,7 @@ import { ShowPasswordButton } from "../../Components/ShowPasswordBtn/ShowPasswor
 import { GlobalStyles } from "../../styles/GlobalStyles"
 import * as S from './styles' ; 
 import { isMobile } from "react-device-detect";
+import { Home } from "../Home/Home";
 
 
 export const RegisterAccount: React.FC = () => {
@@ -59,8 +60,7 @@ export const RegisterAccount: React.FC = () => {
 
     return (
         <>
-        <Header />
-        <LeftBar showLeft={false} />
+        <Home />
         <S.Container onMouseEnter={() => setShowContent(true)}>
             <S.Content showContent={showContent}>
 

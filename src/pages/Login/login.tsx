@@ -4,6 +4,8 @@ import * as S from './styles'
 import { Header } from '../../Components/Header/Header';
 import { useNavigate } from 'react-router-dom';
 import { LeftBar } from '../../Components/LeftBar/LeftBar';
+import { Tiger } from '../../Components/Tiger/Tiger';
+import { Home } from '../Home/Home';
 
 
 export const Login : React.FC = () => {
@@ -27,8 +29,7 @@ export const Login : React.FC = () => {
 
     return (
         <>
-        <Header />
-        <LeftBar showLeft={false} />
+        <Home />
         <S.Container onMouseEnter={() => setShowContent(true)}>
             <S.Content showContent={showContent}>
 

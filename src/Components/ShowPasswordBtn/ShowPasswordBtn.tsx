@@ -18,7 +18,7 @@ export const ShowPasswordButton: React.FC<ShowPasswordButtonProps> = ({ id, show
 
   return (
     <S.ShowPasswordButton type="button" id={id} onClick={togglePassword}>
-      <FaEye size={25} className={isPasswordVisible ? 'FaEyeSlash' : 'FaEye'} />
+      <FaEye size={25} color='white' className={isPasswordVisible ? 'FaEyeSlash' : 'FaEye'} />
     </S.ShowPasswordButton >
   );
 };

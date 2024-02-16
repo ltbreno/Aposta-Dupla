@@ -22,8 +22,8 @@ export const Header: React.FC = () => {
         navigate('/')
     }
 
-    const [showLeft, setShowLeft] = useState(false) ;
-    const [showRight, setShowRight] = useState(false) ;
+    const [showLeft, setShowLeft] = useState(true) ;
+    const [showRight, setShowRight] = useState(true) ;
 
     return (
         <S.StyledHeader>
@@ -53,6 +53,7 @@ export const Header: React.FC = () => {
                 <LeftBar showLeft={showLeft} /> 
                 <ChatRightBar showRight={showRight} />
             </S.Wrapper>
+            <hr color='#F12C4C' />
         </S.StyledHeader>
     )
 }

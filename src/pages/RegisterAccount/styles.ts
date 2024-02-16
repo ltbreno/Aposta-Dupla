@@ -12,17 +12,18 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     opacity: 1;
+    backdrop-filter: blur(7px);
 `;
 
 export const Content = styled.div`
     display: flex ;
     flex-direction: column ;
     align-items: center ;
+    justify-content: center ;
     margin: auto ;
-    border: 3px solid #161E2C ;
     width: 450px;
-    height: 460px;
-    background-color: #121825;
+    height: 470px;
+    background-color: rgba(0, 0, 0, 0.95) ;
     border-radius: 8px;
     opacity: ${({ showContent }) => (showContent ? 1 : 0)};
     transform: ${({ showContent }) => (showContent ? 'translateY(0)' : 'translateY(100%)')};
@@ -75,13 +76,12 @@ export const SubmitButton = styled.button`
     font-size: 1rem ;
 
     border-radius: 8px ;
-    background-color: #101620 ;
+    background-color: gold ;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-right: 25px ;
 
     &:hover {
-        background-color: #2980b9 ;
-        filter: brightness(1.3) ;
+        filter: brightness(1.2) ;
     }
 `
 

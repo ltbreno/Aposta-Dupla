@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { HeaderLogged } from "../HeaderLogged/HeaderLogged"
 import * as S from './styles'
 import { useNavigate } from "react-router-dom";
+import { Logged } from "../../pages/Logged/Logged";
 
 
 
@@ -43,7 +44,7 @@ export const AccountBalance: React.FC = () => {
 
     return (
         <>
-            <HeaderLogged additionalItems={[]} />
+            <Logged />
             <S.Deposit onMouseEnter={() => setShowContent(true)}>
                 <S.ContentAccountBalance showContent={showContent}>
                     <S.WrapperText>Meu Saldo</S.WrapperText>
@@ -70,7 +71,9 @@ export const AccountBalance: React.FC = () => {
                         </S.AccountBalanceTotal>
 
                     </S.Container>
+                    <S.WrapperButton>
                     <S.ButtonClose onClick={handleClose}>Fechar</S.ButtonClose>
+                    </S.WrapperButton>
                 </S.ContentAccountBalance>
             </S.Deposit>
             </>

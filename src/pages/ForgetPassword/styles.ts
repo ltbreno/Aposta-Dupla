@@ -14,7 +14,8 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     opacity: 1;
-`;
+    backdrop-filter: blur(10px) ; 
+`
 
 export const Content = styled.div`
     display: flex ;
@@ -22,7 +23,7 @@ export const Content = styled.div`
     align-items: center ;
     width: 450px;
     height: 200px;
-    background-color: #121825;
+    background-color: rgba(0, 0, 0, 0.98) ;
     border-radius: 8px;
     opacity: ${({ showContent }) => (showContent ? 1 : 0)};
     transform: ${({ showContent }) => (showContent ? 'translateY(0)' : 'translateY(100%)')};
@@ -75,12 +76,10 @@ export const SubmitButton = styled.button`
     font-size: 1rem ;
 
     border-radius: 8px ;
-    background-color: #101620 ;
+    background-color: #00E701 ;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #2980b9 ;
-        filter: brightness(1.3) ;
-        transform: scale(1.1);
+        background-color: #1FFF20 ;
     }
 `

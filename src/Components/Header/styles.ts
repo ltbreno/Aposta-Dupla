@@ -54,7 +54,8 @@ export const AuthButton = styled.button`
     }
 
     @media only screen and (max-width: 768px) {
-        font-size: .8rem ;
+        height: 40px ;
+        width: 140px ;
     }
 
 `
@@ -83,7 +84,9 @@ export const ChatButton = styled.button`
 
     &:hover {
         background-color: #2980b9;
-        transform: scale(1.1);
+    }
+    @media only screen and (max-width: 768px) {
+        display: none ;
     }
 `
 
@@ -97,7 +100,7 @@ export const HeaderTitle = styled.h2`
     align-items:center ;
 
     @media only screen and (max-width: 768px) {
-        font-size: .8rem ;
+        font-size: 1rem ;
     }
 `
 

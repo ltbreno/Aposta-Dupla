@@ -70,8 +70,8 @@ export const AuthButton = styled.button`
     }
 
     @media only screen and (max-width: 768px) {
-        height: 30px ;
-        width: 100px ;
+        height: 40px ;
+        width: 140px ;
     }
 
 `
@@ -142,7 +142,7 @@ export const HeaderTitle = styled.h2`
     color:white ;
 
     @media only screen and (max-width: 768px) {
-        font-size: .8rem ;
+        font-size: 1rem ;
     }
 `
 export const DepositButton = styled.button`
