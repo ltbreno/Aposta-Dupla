@@ -10,7 +10,7 @@ export const Games = styled.button`
     border: none ;
     border-radius: 5px ; 
     height: 30px ;
-    width:90px;
+    width:100%;
     padding : 0 1rem ;
     background-color: #121825 ;
     color: white ;

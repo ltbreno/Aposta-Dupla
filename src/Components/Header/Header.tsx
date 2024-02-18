@@ -53,7 +53,6 @@ export const Header: React.FC = () => {
                 <LeftBar showLeft={showLeft} /> 
                 <ChatRightBar showRight={showRight} />
             </S.Wrapper>
-            <hr color='#F12C4C' />
         </S.StyledHeader>
     )
 }

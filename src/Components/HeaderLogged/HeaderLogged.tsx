@@ -76,7 +76,7 @@ export const HeaderLogged: React.FC<ExpandableButtonProps> = ({ additionalItems 
                 <LeftBar showLeft={showLeft} />
                 <ChatRightBar showRight={showRight} />
             </S.Wrapper>
-            <hr color='#F12C4C' />
+            
         </S.StyledHeader>
 
     )
