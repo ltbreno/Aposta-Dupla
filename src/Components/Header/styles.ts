@@ -98,6 +98,7 @@ export const ButtonWrapper = styled.div`
 export const HeaderTitle = styled.h2`
     color:white ;
     align-items:center ;
+    font-weight: 600 ;
 
     @media only screen and (max-width: 768px) {
         font-size: 1rem ;

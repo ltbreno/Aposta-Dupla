@@ -67,8 +67,9 @@ export const GameImage = styled.img`
     width:30px ;
 `
 export const GameText = styled.h2`
-    font-size: .8rem ;
+    font-size: .9rem ;
     margin-left: 10px ;
+    font-weight: 600 ;
 `
 
 export const TextWrapper = styled.div`
@@ -94,7 +95,7 @@ export const Wrapper  = styled.div`
 export const OriginsGames = styled.h3`
     color: #5B677D ;
     font-size: 1.1rem ;
-    font-weight: 500 ; 
+    font-weight: 600 ; 
     text-align: left ;
     margin-bottom: 15px;
 `
