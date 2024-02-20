@@ -64,7 +64,9 @@ export const RegisterAccount: React.FC = () => {
         <S.Container onMouseEnter={() => setShowContent(true)}>
             <S.Content showContent={showContent}>
 
-                    <S.Title>Crie sua conta</S.Title>
+                    <S.Title>Aposta dupla 🔥</S.Title>
+                    <S.SubTitle>Corra e ganhe um bônus de 100% em seu</S.SubTitle>
+                    <S.SubTitle1>primeiro depósito</S.SubTitle1>
                     <S.WrapperLogin>
                         <S.TitleInput>Digite seu email ou nome de usuario *</S.TitleInput>
                         <S.LoginInput id="login" placeholder=" Login" required />
@@ -75,8 +77,10 @@ export const RegisterAccount: React.FC = () => {
                             </S.WrapperViewPassword>
                         <S.TitleInput>Verifique sua senha *</S.TitleInput>
                         <S.WrapperViewPassword>
-                            <S.LoginInput type={showPassword ? 'text' : 'password'} placeholder=' Password ' minLength={3} required />
-                            <ShowPasswordButton id="togglePassword" showPassword={showPassword} setShowPassword={setShowPassword} />
+                            
+                                <S.LoginInput type={showPassword ? 'text' : 'password'} placeholder=' Password ' minLength={3} required />
+                                <ShowPasswordButton id="togglePassword" showPassword={showPassword} setShowPassword={setShowPassword} />
+                            
                         </S.WrapperViewPassword>
                         <S.TitleInput>Numero do CPF </S.TitleInput>
                         <S.LoginInput type='text' placeholder=' Digite seu CPF' onChange={handleChange} maxLength={14} required/>

@@ -5,13 +5,13 @@ interface ContainerProps {
 }
 
 export const Container = styled.aside<ContainerProps>`
-    position: fixed ;
+    position: absolute ;
     top: 30px ;
     right: ${ (props) => (props.showRight ? 
     '0' : '-350px ')} ; 
 
     width: 300px ;
-    height: 100vh ;
+    height: 1130px  ;
     background-color: #161E2C ;
 
     margin-top: 3.75rem ;

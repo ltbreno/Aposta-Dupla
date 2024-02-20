@@ -132,7 +132,7 @@ export const CloseButtonDeposit = styled.button`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #2980b9 ;
+        background-color: #F12C4C ;
     }
 `
 
@@ -178,11 +178,11 @@ export const WrapperName = styled.div`
 export const WrapperValue = styled.div`
     margin-top: 15px ;
 `
-export const InputSubmit = styled.input`
+export const InputSubmit = styled.button`
     height: 35px ;
     width: 200px ;
     padding : 0 1rem ;
-    background-color: #F12C4C ;
+    background-color: gold ;
     color: white ;
 
     font-size: 1rem ;
@@ -199,9 +199,9 @@ export const InputSubmit = styled.input`
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: filter 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #A81E35;
+        filter: brightness(1.1)
     }
 `

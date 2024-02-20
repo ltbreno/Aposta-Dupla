@@ -14,6 +14,10 @@ export const Header: React.FC = () => {
     // Verificar se está na página inicial
     const isHome = location.pathname === '/';
 
+    const handleRegister = () => {
+        navigate('/registeraccount')
+    }
+
     const handleLogin = () => {
         navigate('/login');
     }
@@ -36,10 +40,16 @@ export const Header: React.FC = () => {
                 </S.WrapperTitle>
                 <S.ButtonWrapper>
                     {isHome ? (
+                        <>
+                            <S.RegisterButton onClick={handleRegister}>
+                                Registre-se
+                            </S.RegisterButton>
+
                             <S.AuthButton onClick={handleLogin}>
                                 <RiLoginBoxLine />
-                                Login | Cadastro
+                                Login
                             </S.AuthButton>
+                        </>
                     ) : (
                         <S.AuthButton onClick={handleHome}>
                                 <RiLoginBoxLine />

@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import * as S from './styles' ;
 
 
@@ -7,12 +8,21 @@ interface LeftProps {
 
 export const LeftBar: React.FC<LeftProps> = ({showLeft}) => {
 
+   const navigate = useNavigate() ;
+
+   const handleBonus = () => {
+        navigate('/registeraccount')
+   }
 
     return (
         <S.Container key={1} showLeft={showLeft}>
             <S.WrapperButton>
             </S.WrapperButton>
             <S.Wrapper>
+        <S.PromoButton onClick={handleBonus}>
+            Resgate 100% de bonus 🎁
+        </S.PromoButton>
+
         <S.OriginsGames>
             Games
         </S.OriginsGames>

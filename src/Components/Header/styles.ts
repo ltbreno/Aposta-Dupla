@@ -28,6 +28,34 @@ export const ButtonLeft = styled.button`
     border: none ;
 `
 
+export const RegisterButton = styled.button`
+    padding : 0 1rem ;
+    background-color: #161E2C ;
+    color: white ;
+
+    font-size: 1rem ;
+    font-weight: 500 ;
+
+    display: flex ;
+    align-items: center ;
+    gap: 0.3rem ;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        color: #F12C4C ;
+    }
+
+    @media only screen and (max-width: 768px) {
+        height: 40px ;
+        width: 140px ;
+    }
+`
 
 export const AuthButton = styled.button` 
     height: 40px ;

@@ -13,7 +13,7 @@ export const ImageHome = styled.img` // DIV QUE REPRESENTA O LUGAR AONDE A IMAGE
     margin-top: 60px ;
 
     width: 1100px ;
-    height: 300px ;
+    height: 400px ;
     background-color: red ;
 
     border-radius: 8px ;
@@ -36,12 +36,14 @@ export const SearchBar = styled.div`
 
 export const SearchInput = styled.input`
     width: 1100px ;
-    padding: 1px 8px ;
+    height: 50px ;
+    padding: 1px 12px ;
     font-size: 16px;
     border: none;
-    border-radius: 8px ;
+    border-radius: 3px ;
     outline: none ;
-    
+    background-color: #323637 ;
+    color: white ;
 `
 
 export const GameIcons = styled.div`
@@ -58,7 +60,7 @@ export const RecommendedGames = styled.div`
     display: flex ;
     flex-direction : column ;
     width: 1100px ;
-    height: 250px ;
+    height: 200px ;
     background-color: #101620 ;
 
     @media only screen and (max-width: 768px) {
@@ -90,11 +92,47 @@ export const WrapperBestGames = styled.div`
 `
 
 export const RecommendedTitle = styled.h2`
-
+    color: white ;
 `
 
 export const BestGames = styled.img`
-    margin-top: 50px ;
+    margin-top: 30px ;
     width: 350px ;
+    height: 100px ;
+    border-radius: 8px ;
+`
+
+export const AnotherGames = styled.div`
+    margin-top: 10px ;
+    display: flex ;
+    flex-direction : column ;
+    width: 1100px ;
+    height: 250px ;
+    background-color: #101620 ;
+
+    @media only screen and (max-width: 768px) {
+        width: 400px ;
+        display: flex ;
+        flex-direction: column ;
+    }
+`
+
+export const WrapperGames = styled.div`
+    display: flex ;
+    justify-content: space-between ;
+
+    @media only screen and (max-width: 768px) {
+        width: 400px ;
+        display: flex ;
+        flex-direction: column ;
+        align-items: center ;
+        justify-content: center ;
+    }
+`
+
+export const Games = styled.img`
+    margin-top: 30px ;
+    width: 150px ;
     height: 150px ;
+    border-radius: 8px ;
 `

@@ -11,7 +11,7 @@ export const Container = styled.aside<ContainerProps>`
     '0' : '-350px ')} ; 
 
     width: 300px ;
-    height: 100vh ;
+    height: 1130px  ;
     background-color: #161E2C ;
 
 
@@ -28,7 +28,23 @@ export const Container = styled.aside<ContainerProps>`
   }
 `
 
+export const PromoButton = styled.button`
+    width: 250px ;
+    height: 50px ;
+    margin-left: 7px ;
+    border-radius: 4px ;
+    margin-bottom: 25px ;
+    border: none ;
+    background-color: #03C6FC ;
+    font-weight: 700 ;
+    font-size: .93rem ;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 
+    &:hover {
+        background-color: #06B6E7 ;
+    }
+
+`
 
 export const AuthButton = styled.button`
     border: none ;
@@ -112,7 +128,7 @@ export const Games = styled.button`
     border-radius: 5px ; 
     height: 30px ;
     padding : 0 ;
-    background-color: #121825 ;
+    background-color: #161E2C ;
     color: white ;
 
     font-size: .80rem ;
@@ -137,7 +153,7 @@ export const Games = styled.button`
   }
 
   &:hover::before {
-    width: 5%;
+    width: 3%;
   }
 
 `

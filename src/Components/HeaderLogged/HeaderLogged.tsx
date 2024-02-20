@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { TfiAlignJustify } from 'react-icons/tfi';
 import { LeftBar } from '../LeftBar/LeftBar';
 import { ChatRightBar } from '../ChatRightBar/ChatRightBar';
+import { GiReceiveMoney } from "react-icons/gi";
 
 interface ExpandableButtonProps {
     additionalItems: React.ReactNode[];
@@ -59,7 +60,7 @@ export const HeaderLogged: React.FC<ExpandableButtonProps> = ({ additionalItems 
                         </S.ExpandButtonContainer>
                             <S.ValueAccount>
                                 <S.ValueFound>
-                                    R$ 0,00
+                                    <GiReceiveMoney /> 0,00
                                 </S.ValueFound>
                             </S.ValueAccount>
 

@@ -40,7 +40,11 @@ export const DepositPage: React.FC = () => {
     <S.Deposit onMouseEnter={() => setShowContent(true)}>
         <S.ContentDeposit showContent={showContent}>
             <S.Wrapper>
+                
+                <S.Title>Aposta dupla 🔥</S.Title>
+
                 <S.TitlePaymentoMetod>Selecione o metodo de pagamento</S.TitlePaymentoMetod>
+
                 <S.RecomendPaymentMetod>Recomendado</S.RecomendPaymentMetod>
                     <S.PixPayment onClick={handlePixPayment}>
                         Pix

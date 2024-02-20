@@ -17,9 +17,13 @@ export const Deposit = styled.div`
 `;
 
 export const ContentDeposit = styled.div`
-    width: 450px;
-    height: 350px;
-    background-color: rgba(0, 0, 0, 0.98) ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
+    width: 700px;
+    height: 550px;
+    background-color: #161E2C ;
     border-radius: 8px;
     opacity: ${({ showContent }) => (showContent ? 1 : 0)};
     transform: ${({ showContent }) => (showContent ? 'translateY(0)' : 'translateY(100%)')};
@@ -38,6 +42,7 @@ export const Wrapper = styled.div`
     flex-direction: column ;
     justify-content:center ;
     align-items: center ;
+    width: 100% ;
 `
 
 export const TitlePaymentoMetod = styled.h2`
@@ -57,9 +62,15 @@ export const RecomendPaymentMetod = styled.p`
     color: #BCBFBD ;
     margin-bottom: 4px;
     text-align: left;
-    margin-top: 0;
+    margin-top: 5px ;
     text-transform: uppercase;
     
+`
+
+export const Title = styled.h2`
+    margin-bottom: 30px ;
+    font-size:1.5rem ;
+    color:white ;
 `
 
 export const PixPayment = styled.button`
@@ -69,7 +80,7 @@ export const PixPayment = styled.button`
     justify-content:space-evenly ;
     border-radius: 8px ;
     border: none ;
-    width: 80% ;
+    width: 50% ;
     height: 40px ;
     padding: 1px 8px ;
     
@@ -84,7 +95,7 @@ export const PixPayment = styled.button`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #F12C4C ;
+        background-color: gold ;
     }
 `
 
@@ -96,7 +107,7 @@ export const CardPayment = styled.button`
     align-items: center ;
     border-radius: 8px ;
     border: none ;
-    width: 80% ;
+    width: 50% ;
     height: 40px ;
     padding: 1px 8px ;
     
@@ -113,7 +124,7 @@ export const CardPayment = styled.button`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #F12C4C ;
+        background-color: gold ;
     }
 `
 
@@ -138,6 +149,6 @@ export const CloseButtonDeposit = styled.button`
     transition: background-color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-        background-color: #2980b9 ;
+        background-color: #F12C4C ;
     }
 `

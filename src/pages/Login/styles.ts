@@ -21,42 +21,43 @@ export const Content = styled.div`
     align-items: center ;
     margin-top: 40px;
     justify-content: center ;
-    width: 800px;
-    height: 650px;
-    background-color: rgba(0, 0, 0, 0.95) ;
+    width: 700px;
+    height: 550px;
+    background-color: #161E2C ;
     border-radius: 8px;
-    opacity: ${({ showContent }) => (showContent ? 1 : 0)};
+    opacity: ${({ showContent }) => (showContent ? 0.94 : 0)};
     transform: ${({ showContent }) => (showContent ? 'translateY(0)' : 'translateY(100%)')};
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 `;
 
 export const Title = styled.h2`
-    margin-top: 5px;
-    font-size:1.2rem ;
+    margin-bottom: 30px;
+    font-size:1.5rem ;
     color:white ;
 `
 
 export const LoginInput = styled.input` 
     width: 300px ;
     height: 35px ;
-    border-radius: 8px ;
+    border-radius: 2px ;
     background-color: #0f1621 ;
     color: white ;
-    font-weight: 400 ;
+    font-weight: 600 ;
     border: none ;
 
 
     padding: 5px 8px;
-    font-size: .9rem ;
+    font-size: .8rem ;
     outline: none;
     
 `
 
 export const TitleInput = styled.h3`
     color: #7A869A ;
-    font-size: .8rem ;
+    font-size: .9rem ;
     margin-top: 15px ;
     margin-bottom: 5px ;
+    font-weight: 700 ;
 `
 
 export const WrapperLogin = styled.div`
@@ -75,7 +76,7 @@ export const SubmitButton = styled.button`
     font-weight: 500 ;
     font-size: 1rem ;
 
-    border-radius: 8px ;
+    border-radius: 3px ;
     background-color: #F12C4C ;
     transition: background-color 0.3s ease, transform 0.3s ease;
 
@@ -86,7 +87,7 @@ export const SubmitButton = styled.button`
 `
 
 export const DivisorText = styled.h4`
-    margin-top: .7rem ;
+    margin-top: .9rem ;
     color: #7A869A ;
     font-weight: 500 ; 
 `
@@ -96,7 +97,7 @@ export const ForgetPassword = styled.button`
     color: black ;
 
     background-color: gold ;
-    border-radius: 8px ;
+    border-radius: 3px ;
     border: none ;
     width: 300px ;
     height: 35px ;
@@ -116,7 +117,7 @@ export const RegisterAccount = styled.button`
     color: black ;
 
     background-color: gold ;
-    border-radius: 8px ;
+    border-radius: 3px ;
     border: none ;
     width: 300px ;
     height: 35px ;

@@ -70,7 +70,7 @@ export const Pix: React.FC = () => {
                         <S.WrapperValue>
                             <S.Input type='number' placeholder=' Valor' onChange={handleChangeNumber} maxLength={10} required/>
                         </S.WrapperValue>
-                        <S.InputSubmit type='submit' id='submit' name='submit' />
+                        <S.InputSubmit type='submit' id='submit' name='submit'>Depositar</S.InputSubmit>
                     </S.WrapperForm>
                 <S.CloseButtonDeposit onClick={handleCloseDeposit}>Fechar</S.CloseButtonDeposit>
             </S.Wrapper>

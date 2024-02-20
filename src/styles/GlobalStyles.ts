@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body , button , input {
-        font-family: "Arvo", serif;
+        font-family: "Montserrat", serif;
     }
 
 
@@ -32,5 +32,6 @@ export const GlobalStyles = createGlobalStyle`
   font-weight: weight;
   font-style: normal;
 }
+
 
 `

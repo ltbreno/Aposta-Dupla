@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 
 export const ShowPasswordButton = styled.button`
+    position: absolute ;
+    left: 460px ;
+    margin-top: 5px ;
     margin-left: 5px ;
     border: none ;
-    background-color: rgba(0, 0, 0, 0.92) ;
+    background-color: #16151E ;
 
 `

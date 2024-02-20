@@ -21,29 +21,44 @@ export const Content = styled.div`
     align-items: center ;
     justify-content: center ;
     margin: auto ;
-    width: 450px;
-    height: 470px;
-    background-color: rgba(0, 0, 0, 0.95) ;
+    width: 700px;
+    height: 550px;
+    background-color: #161E2C ;
     border-radius: 8px;
-    opacity: ${({ showContent }) => (showContent ? 1 : 0)};
+    opacity: ${({ showContent }) => (showContent ? 0.94 : 0)};
     transform: ${({ showContent }) => (showContent ? 'translateY(0)' : 'translateY(100%)')};
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-`;
+`
 
+export const SubTitle = styled.h2`
+    margin-top: 15px;
+    font-weight: 500 ;
+    font-size: .8rem ;
+    color:white ;
+`
+export const SubTitle1 = styled.h2`
+    font-weight: 500 ;
+    font-size: .8rem ;
+    color:white ;
+`
+
+export const InputDiv = styled.div`
+    position: relative ;
+`
 
 export const Title = styled.h2`
     margin-top: 5px;
-    font-size:1.2rem ;
+    font-size:1.5rem ;
     color:white ;
 `
 
 export const LoginInput = styled.input` 
     width: 300px ;
-    height: 30px ;
-    border-radius: 8px ;
+    height: 40px ;
+    border-radius: 4px ;
     background-color: #101620 ;
     color: white ;
-    font-weight: 300 ;
+    font-weight: 500 ;
     border: none ;
     transition: border-color 0.3s ease;
     padding: 5px 8px;
@@ -78,7 +93,6 @@ export const SubmitButton = styled.button`
     border-radius: 8px ;
     background-color: gold ;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-right: 25px ;
 
     &:hover {
         filter: brightness(1.2) ;
